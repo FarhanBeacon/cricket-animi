@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.field{
+    background: url('images/field1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    padding-left: 100px;
+    height: 650px;
+}
+
+.bat{
+    transition: transform 1s ease-in;
+    position: relative;
+    z-index: 2;
+}
+
+.field:hover .bat{
+    transform: rotate(-50deg);
+    transform-origin:  top right;
+}
+
+.ball{
+    position: relative;
+    left: 166px;
+    transition: transform 1s ease-out 1.000001s;
+    z-index: 2;
+}
+
+.field:hover .ball{
+    transform: translate(800px, -300px);
+}
+
+.gloves{
+    position: relative;
+    z-index: 1;
+    left: 820px;
+    top: -235px;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
