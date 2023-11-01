@@ -8,6 +8,8 @@ header{
     background-color: black;
 }
 
+
+/* For Field Styles */
 .field{
     background: url('images/field1.jpg');
     background-repeat: no-repeat;
@@ -18,6 +20,8 @@ header{
     height: 650px;
 }
 
+
+/* For Bat Styles */
 .bat{
     transition: transform 1s ease-in;
     position: relative;
@@ -29,6 +33,8 @@ header{
     transform-origin:  top right;
 }
 
+
+/* For Ball Styles */
 .ball{
     position: relative;
     left: 166px;
@@ -40,13 +46,21 @@ header{
     transform: translate(800px, -300px);
 }
 
+
+/* For Gloves Styles */
 .gloves{
     position: relative;
-    z-index: 1;
     left: 820px;
-    top: -235px;
+    top: 100px;
+    z-index: 1;
+    transition: transform .99s ease-out 1s;
 }
 
+.field:hover .gloves{
+    transform: translateY(-335px);
+}
+
+/* For Footer Styles */
 footer{
     padding: 50px;
     text-align: center;
